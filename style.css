@@ -1,0 +1,134 @@
+body{
+
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 105vh;
+     margin: 0;
+     background: #222;
+     font-family: 'Open Sans', sans-serif;
+    background-image: url("https://source.unsplash.com/1600x900/?city");
+    font-size: 120%;
+}
+
+.card{
+    background: #000000d0;
+    color: white;
+    padding: 2em;
+    border-radius: 50px;
+    width: 100%;
+    max-width: 425px;
+    border: 1px solid #fff;
+}
+
+.search{
+
+     display: flex;
+     align-items: center;
+     justify-content: center;
+
+}
+
+button{
+    margin: 0.6em;
+    border-radius: 55%;
+    border: none;
+    height: 54px;
+    width: 54px;
+    outline: none;
+    background: white;    /* #7c7c7c2b */
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+button:hover{
+    background: #7c7c7c6b;
+}
+
+input.search-bar{
+
+     border: none;
+     outline: none;
+     padding: 0.4em 1.5em;
+     border-radius: 25px;
+     background: #7c7c7c2b;
+     color: white;
+     font-family: inherit;
+     font-size: 105%;
+     width: calc(100% - 100px);
+     border: 2px solid white;
+}
+
+h1.temp{
+    margin: 0;
+    margin-bottom: 0.4em;
+    letter-spacing: 4px
+
+}
+
+h2{
+    font-weight: blod;    
+    margin-bottom: 0.4em;
+    letter-spacing: 4px
+
+}
+
+.description{
+    text-transform: capitalize;
+    margin-left: 7px;
+}
+
+.flex{
+    display: flex;
+    align-items: center;
+}
+
+.icon{
+     
+    padding: 0;
+     
+}
+
+.weather.loading {
+    visibility: hidden;
+    max-height: 20px;
+    position: relative;
+
+}
+
+.weather.loading::after{
+    visibility: visible;
+    content: "Loading...";
+    color: white;
+    position: absolute;
+    top: 0;
+    left: 20px;
+}
+
+/* Git Hub */
+
+.github-corner svg{
+	position:absolute;
+	right:0;
+	top:0;
+	mix-blend-mode:darken;
+	color:#eeeeee;
+	fill:#3b3b98;
+	clip-path: polygon(0 0, 100% 0, 100% 100%);
+}
+.github-corner:hover .octo-arm{
+	animation:octocat-wave .56s;
+}
+@keyframes octocat-wave{
+	0%, 100%{
+		transform:rotate(0);
+	}
+	20%, 60%{
+		transform:rotate(-20deg);
+	}
+	40%, 80%{
+		transform:rotate(10deg);
+	}
+}
+
